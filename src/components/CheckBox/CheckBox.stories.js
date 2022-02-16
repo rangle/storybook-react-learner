@@ -45,10 +45,16 @@ Disabled.story = {
 }
 
 export const DisabledSelected = () =>
-  <CheckBox
-    disabled={true}
-    isSelected={true}
-  />
+  <div>
+    <CheckBox
+      disabled={true}
+      isSelected={true}
+    />
+    <CheckBox>
+
+    </CheckBox>
+  </div>
+
 
 DisabledSelected.story = {
   name: 'disabled-selected'

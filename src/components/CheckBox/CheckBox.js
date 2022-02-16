@@ -20,7 +20,7 @@ const Input = styled.input.attrs({ type: 'checkbox' })`
   ${props =>
     props.isSelected && !props.isInvalid &&
     `
-      background-color: blue;
+      background-color: black;
       border: 2px solid black;
 
       &:checked::before {
