@@ -13,14 +13,14 @@ const Input = styled.input.attrs({ type: 'checkbox' })`
   height: 24px;
   border: 2px solid #262626;
   border-radius: 0.15em;
-  background-color: white;
+  background-color: green;
 
   ${props => console.log(props.isSelected)}
 
   ${props =>
     props.isSelected && !props.isInvalid &&
     `
-      background-color: purple;
+      background-color: black;
       border: 2px solid black;
 
       &:checked::before {
