@@ -46,7 +46,6 @@ const SIZES = {
 //   </div>
 // }
 
-
 const StyledButton = styled.button`
   text-align: center;
   border: 0;
