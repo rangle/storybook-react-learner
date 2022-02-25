@@ -20,7 +20,6 @@ const LABEL_POSITION = {
 
 
 function handleChange(e) {
-  console.log(e.target.value)
 }
 
 
@@ -50,8 +49,6 @@ const InputLabel = styled.label`
 
 
 const ErrorMessage = styled.div`
-
-${props => console.log(props)}
 ${props =>
     props.isInvalid === true &&
     `
@@ -60,7 +57,6 @@ ${props =>
 `
 
 const ErrorMessageWrapper = (props) => {
-  console.log(props)
 
   if (props.isInvalid) {
     return (

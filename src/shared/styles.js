@@ -2,7 +2,7 @@
 
 
 export const color = {
-    primary: "#FF4785", // coral
+    primary: "green", // coral
     secondary: "#1EA7FD", // ocean
 
 }

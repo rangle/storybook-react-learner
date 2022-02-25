@@ -50,9 +50,6 @@ export const DisabledSelected = () =>
       disabled={true}
       isSelected={true}
     />
-    <CheckBox>
-
-    </CheckBox>
   </div>
 
 

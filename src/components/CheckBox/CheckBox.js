@@ -15,18 +15,11 @@ const Input = styled.input.attrs({ type: 'checkbox' })`
   border-radius: 0.15em;
   background-color: white;
 
-  ${props => console.log(props.isSelected)}
-
   ${props =>
     props.isSelected && !props.isInvalid &&
     `
       background-color: black;
       border: 2px solid black;
-
-      &:checked::before {
-        border: solid white;
-        border-width: 0 2px 2px 0;
-      }
     `}  
 
   display: grid;
@@ -137,9 +130,7 @@ const Input = styled.input.attrs({ type: 'checkbox' })`
       :hover {
          background-color: #DEDEDE;
       }
-    `}
-  
-  }   
+    `}  
 
 `
 
@@ -150,9 +141,6 @@ export default class CheckBox extends React.Component {
   render() {
     const isSelected = this.state.isSelected;
     const isDisabled = this.props.disabled;
-    console.log(isDisabled);
-
-    console.log('Is Selected ', isSelected);
     return (
       <div>
         <Input
